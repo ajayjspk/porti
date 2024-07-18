@@ -72,11 +72,12 @@ const Navbar = () => {
 {/* Responsive Social Media Icons */}
 <div className="hidden md:flex gap-10"> {/* Hide on small screens */}
   {socialMedia.map((icon) => (
+    <a href={icon.link} target='blank'>
     <img
       key={icon.id}
       src={icon.src}
-      className="w-[28px] h-[28px] object-contain cursor-pointer gap-0 filter invert border-2"
-    />
+      className={`w-[28px] h-[28px] object-contain cursor-pointer gap-0 ${icon.class}`}
+    /></a>
   ))}
 </div>
 

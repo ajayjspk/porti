@@ -19,7 +19,7 @@ const WorkDetails = () => {
     < div className='flex flex-col items-center bg-slate-900 sm:mr-0 sm:ml-0 lg:mr-30 lg:ml-30'> 
     <p><a>Home</a><span> / </span><a>Projects</a><span> / </span><a>{ Project?.name }</a></p>
     <div className=' flex flex-col justify-center items-center lg:w-4/5'>
-    <h2 className='font-bold text-4xl m-5 text-left'>{Project.name}</h2>
+    <h2 className='font-bold text-4xl m-5 text-left  font-ComicNeue'>{Project.name}</h2>
       <img src={Project.image} className='w-10/12 rounded-lg sm:w-8/12 md:w-9/12 lg:w-full'/>
 
     <div className='flex justify-between items-center w-full  w-11/12 p-5'>
@@ -31,7 +31,7 @@ const WorkDetails = () => {
       ))}</div>
 
       </div>
-    <p className='p-4 mt-5 text-xl text-justify'>{Project.description}</p>
+    <p className='p-4 mt-5 text-xl text-justify  font-ComicNeue'>{Project.description}</p>
     {/* ... display other project details */}
   </div>
   </div>

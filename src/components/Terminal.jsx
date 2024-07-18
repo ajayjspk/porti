@@ -87,7 +87,7 @@ const Terminal = () => {
 
   const processCommand = (input) => {
     let output;
-    switch (input) {
+    switch (input.toLowerCase()) {
       case 'help':
         output = 'Available commands: Projects,Education, Contact';
         break;
@@ -126,7 +126,15 @@ const Terminal = () => {
             window.open('https://www.instagram.com/8388ax/', '_blank');
             output = 'Opening Instagram...';
             break;
-            case 'light':
+          case 'education':
+            // window.open('https://www.instagram.com/8388ax/', '_blank');
+            output = 'GMRit college Rajam, 2021 - 2025';
+            break;
+          case 'projects':
+            window.open('https://github.com/ajayjspk', '_blank');
+            output = 'My Github Account';
+            break;
+          case 'light':
               setTheme('light');
               output = 'Switching to light mode...';
               break;

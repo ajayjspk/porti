@@ -29,7 +29,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF] font-ComicNeue">AJAY</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-slate-100 font-ComicNeue`}>
-            I develop 3D visuals, user interfaces <br className="sm:block hidden" /> and web applications
+            I develop 3D Websites, user interfaces <br className="sm:block hidden" /> and FullStack web applications
           </p>
         </div>
         {/* </div> */}

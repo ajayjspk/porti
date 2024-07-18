@@ -19,15 +19,19 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    github,
   } from "../assets";
+  import Setting from "../assets/settings.png"
   import Aave from "../assets/social media icons/Aave.png";
   import Insta from "../assets/social media icons/instagram.svg";
   import FB from "../assets/social media icons/facebook.svg";
   import Linked from "../assets/social media icons/linked.svg";
+  import DeepFake from "../assets/DeepFake.png";
+  import Blogger from "../assets/Blogger.png";
+  import Portifolio from "../assets/portifolio.png";
+  import Terminal from "../assets/terminal.png";
+
   
 
 
@@ -53,20 +57,28 @@ import {
   
  const socialMedia=[
     {
-      src:Aave,
-      title:"Ajay Arava",
+      src:github,
+      title:"GitHub",
+      link:"https://github.com/ajayjspk",
+      class:""
     },
     {
       src:Insta,
       title:"8388ax",
+      link:"https://www.instagram.com/8388ax/",
+      class:""
     },
     {
       src:FB,
       title:"Ajay Arava",
+      link:"",
+      class:""
     },
     {
       src:Linked,
       title:"Ajay Arava",
+      link:"https://www.linkedin.com/in/ajay-arava/",
+      class:"invert"
     },
   ];
 
@@ -147,10 +159,10 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "INV technologies",
+      icon: reactjs,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "November 2023 - December 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -159,11 +171,11 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "FullStack web Developer",
+      company_name: "Top Notch",
+      icon: Aave,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "10 July 2023 -8 Aug 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -171,32 +183,32 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -228,9 +240,15 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Deep Fake Detection",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        `Detecting deepfakes using advanced deep learning models such as ResNet and AlexNet has become a critical pursuit in computer vision. Deepfakes, AI-generated media that convincingly depict fabricated events or statements, pose significant risks including misinformation and privacy breaches. To tackle this challenge, researchers are turning to sophisticated neural network architectures.
+
+ResNet, known as Residual Network, is celebrated for its capability to effectively train extremely deep networks. By introducing skip connections that facilitate learning residual functions rather than direct mappings, ResNet mitigates issues like the vanishing gradient problem. In the context of deepfake detection, ResNet architectures excel at identifying subtle patterns and distinguishing features that indicate manipulated content.
+
+Similarly, AlexNet gained prominence for winning the ImageNet Challenge in 2012. Its architecture includes convolutional and fully connected layers, augmented with techniques like local response normalization and dropout to enhance performance and prevent overfitting. In the realm of deepfake detection, AlexNet's ability to extract intricate features from images plays a crucial role in detecting anomalies that may suggest tampering or AI-generated content.
+
+As the race between creators of deepfakes and detection systems continues, leveraging advanced models such as ResNet and AlexNet, coupled with robust datasets and refined training methodologies, is essential. These efforts aim to bolster the accuracy and reliability of deepfake detection, thereby mitigating potential societal risks associated with manipulated media in today's digital era.`,
       tags: [
         {
           name: "react",
@@ -241,54 +259,96 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Deep Learning",
           color: "pink-text-gradient",
         },
+        {
+          name: "Flask",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: DeepFake,
+      source_code_link: "https://github.com/ajayjspk/DeepFake_Detection",
     },
     {
-      name: "Job IT",
+      name: "Blogger Website",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        `The Blogger website allows users to create, edit, and delete blog posts through an intuitive interface built with Material-UI components. Users can register and authenticate securely, with MongoDB storing user credentials and profile information. Node.js handles authentication processes and API requests, ensuring data security and seamless interactions between the frontend and backend.
+
+The frontend, developed using React.js and Material-UI, offers a responsive design that adapts to various devices and screen sizes. Components like AppBar, Drawer, and Grid facilitate navigation, layout management, and content presentation, adhering to Material Design principles for a polished user experience.
+
+Behind the scenes, MongoDB stores blog posts with rich text content, comments, and metadata, providing efficient querying and indexing capabilities. Node.js powers the server-side logic, handling CRUD operations on blog posts, user authentication, and authorization, ensuring data integrity and security.`,
       tags: [
         {
-          name: "react",
+          name: "React JS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "NODE JS",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "TailWind CSS",
           color: "pink-text-gradient",
         },
+        {
+          name: "MongoDb",
+          color: "green-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Blogger,
+      source_code_link: "https://github.com/ajayjspk",
     },
     {
-      name: "Trip Guide",
+      name: "Personal Portifolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+       `Welcome to my portfolio! Built using React.js, Three.js, and Framer Motion, this website showcases my journey and expertise in web development and 3D graphics.
+
+Explore My Projects
+In the Projects section, you'll find a collection of my latest works, each crafted with attention to detail and powered by React.js for seamless user interaction. Framer Motion adds fluid animations and transitions, making navigation a delightful experience.
+
+Dive into 3D Visualizations
+Using the power of Three.js, I've integrated interactive 3D models that highlight my skills and creativity in 3D graphics. Navigate through these immersive visuals to see how I blend technology and design.
+
+Experience Seamless Interactions
+With Framer Motion, I've brought my portfolio to life with smooth page transitions and dynamic hover effects. Every interaction is designed to engage and provide a glimpse into my passion for front-end development.`,
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Three JS",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind css",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: Portifolio,
+      source_code_link: "https://github.com/ajayjspk/portifolio",
+    },
+    {
+      name: "Terminal",
+      description:
+       `Welcome to my React Terminal! This interactive interface combines the familiarity of a command-line terminal with the flexibility of React, offering both light and dark modes for user preference. You can explore various default commands to navigate through different sections: use help to see available commands and their usage, about to learn about this terminal application, projects to discover my latest projects, skills to see my proficiency in various technologies, and contact to find ways to get in touch. Whether you're curious about my work or looking to connect, this terminal provides an engaging way to interact and explore.`,
+      tags: [
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Three JS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Terminal,
+      source_code_link: "https://github.com/ajayjspk/terminal",
     },
   ];
   

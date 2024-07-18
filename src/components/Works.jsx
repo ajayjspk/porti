@@ -58,10 +58,10 @@ const WorkCard = ({ work }) => (
     <div className='border-2 rounded flex flex-col justify-center items-center m-3 w-full'>
       <img src={work.image} className='w-10/12 h-[300px]' />
       <div className='p-4'>
-        <h2 className='text-white font-bold text-[24px]'>{work.name}</h2>
+        <h2 className='text-white font-bold text-[24px]  font-ComicNeue'>{work.name}</h2>
         <p className='mt-2 text-secondary text-[14px]'>{work.description.length > 90 ? `${work.description.substring(0, 50)}...` : work.description}</p>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 ">
           {work.tags.map((tag, index) => (
             <span key={index} className={`text-xs px-2 py-1 rounded-lg ${tag.color}`}>{tag.name}</span>
           ))}
@@ -76,13 +76,13 @@ const Works = () => {
     <>
       <motion.div>
         <p className={`${styles.sectionSubText} text-center font-ComicNeue`}>
-          What I have done so far
+          
         </p>
         <h2 className={`${styles.sectionHeadText} text-center font-ComicNeue`}>
-          Work Experience.
+         Some Projects.
         </h2>
       </motion.div>
-      <div className="grid grid-cols-2 gap-4 mt-20">
+      <div className="grid grid-cols-1 gap-4 mt-20 sm:grid-cols-2">
         {projects.map((work, index) => (
           <WorkCard key={index} work={work} />
         ))}
