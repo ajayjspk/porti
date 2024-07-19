@@ -74,6 +74,7 @@ const WorkCard = ({ work }) => (
 const Works = () => {
   return (
     <>
+    <p><a href='/'>Home</a><span> / </span><a href='/projects'>Projects</a></p>
       <motion.div>
         <p className={`${styles.sectionSubText} text-center font-ComicNeue`}>
           
@@ -82,10 +83,12 @@ const Works = () => {
          Some Projects.
         </h2>
       </motion.div>
-      <div className="grid grid-cols-1 gap-4 mt-20 sm:grid-cols-2">
+      <div className="min-h-screen flex items-center justify-center">
+      <div className="grid grid-cols-1 gap-4 mt-20 sm:grid-cols-2 items-center justify-center">
         {projects.map((work, index) => (
           <WorkCard key={index} work={work} />
         ))}
+      </div>
       </div>
     </>
   );

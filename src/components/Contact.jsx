@@ -7,13 +7,15 @@ const Contact = () => {
     <div className="flex flex-col md:flex-row justify-center items-center h-full"> {/* Flex column on small screens, flex row on larger screens */}
       <div className="max-w-md w-full mx-auto p-6 rounded-lg shadow-md mb-8 sm:mb-0 sm:w-3/4 md:w-1/2 lg:w-2/5"> {/* Responsive width */}
         <h2 className="text-3xl text-center text-pink-600 font-bold mb-6 font-ComicNeue">Connect with Me</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="57013a6b-aa07-4ec7-8962-cb754c60acc5"></input>
           <div className="mb-4">
             <label className="block text-white text-sm font-semibold mb-2 font-ComicNeue" htmlFor="name">
               Your Name
             </label>
             <input
               id="name"
+              name='first_name'
               placeholder=""
               className="w-full px-3 py-2 border rounded-lg bg-gray-800 focus:border-blue-500 font-ComicNeue"
               type="text"
@@ -25,6 +27,7 @@ const Contact = () => {
             </label>
             <input
               id="email"
+              name='email'
               placeholder="ABC@gmail.com"
               className="w-full px-3 py-2 border rounded-lg bg-gray-800 focus:border-blue-500 font-ComicNeue"
               type="email"
@@ -36,6 +39,7 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
+              name='message'
               rows="4"
               placeholder="Type your message here..."
               className="w-full px-3 py-2 border rounded-lg bg-gray-800 focus:border-blue-500 font-ComicNeue"

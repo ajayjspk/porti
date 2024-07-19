@@ -17,21 +17,21 @@ const WorkDetails = () => {
 
   return (
     < div className='flex flex-col items-center bg-slate-900 sm:mr-0 sm:ml-0 lg:mr-30 lg:ml-30'> 
-    <p><a>Home</a><span> / </span><a>Projects</a><span> / </span><a>{ Project?.name }</a></p>
+    <p><a href='/'>Home</a><span> / </span><a href='/projects'>Projects</a><span> / </span><a>{ Project?.name }</a></p>
     <div className=' flex flex-col justify-center items-center lg:w-4/5'>
     <h2 className='font-bold text-4xl m-5 text-left  font-ComicNeue'>{Project.name}</h2>
       <img src={Project.image} className='w-10/12 rounded-lg sm:w-8/12 md:w-9/12 lg:w-full'/>
 
-    <div className='flex justify-between items-center w-full  w-11/12 p-5'>
+    <div className='flex flex-col justify-between items-center w-full  w-11/12 p-5  sm:flex-row' >
       <a href={Project.source_code_link} target='blank' className=''><img width={40} src={Github} className='invert'/></a>
       <div className='flex '>
       <h3>Technologies Used:-</h3>
       {Project.tags.map(tag=>(
-        <p className={`text-${tag.color} ml-3 font-bold`}>{tag.name}</p>
+        <p className={`flex flex-wrap items-center text-${tag.color} text-wrap ml-3 font-bold sm:text-nowrap`}>{tag.name}</p>
       ))}</div>
 
       </div>
-    <p className='p-4 mt-5 text-xl text-justify  font-ComicNeue'>{Project.description}</p>
+    <p className='p-4 mt-5 text-sm text-justify  font-ComicNeue sm:p-1 font-normal  sm:text-xl'>{Project.description}</p>
     {/* ... display other project details */}
   </div>
   </div>
