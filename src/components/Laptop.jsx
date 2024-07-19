@@ -17,7 +17,7 @@ export default function Laptop() {
                 <PresentationControls enabled global cursor >
                     <primitive object={laptop.scene} scale={[0.8, 0.8, 0.8]} position-y={-1.5} position-x={0.5}>
                     <Html wrapperClass="laptop" position={[-0.25, 1.5, -1.40]} transform distanceFactor={1.16} rotation-x={-0.25}>
-  <iframe src="https://terminal13.netlify.app/" />
+  <iframe src="hhttps://8388.netlify.app/termi" />
 </Html>
                     </primitive>
                 </PresentationControls>
